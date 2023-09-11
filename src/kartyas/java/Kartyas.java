@@ -31,12 +31,23 @@ public class Kartyas {
         do {            
             System.out.println("Oszlop 1-3: ");
             int oszlop = myObj.nextInt();
-            jo = oszlop >=1 && oszlop<=3;
+            jo = oszlop >=1 && oszlop <=3;
         } while (!jo);
     }
 
     private static void Kever() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        for (int i = 0; i <= 7; i++) {
+            switch (i) {
+                case 1:
+                    i = (20 - (i - 1) * 3);
+                case 2:
+                    // [i+7] = (19 - (i - 1) * 3);
+                case 3:
+                    // [i+7] = (21 - (i - 1) * 3);
+                    break;
+                default:
+            }
+        }
     }
 
     private static void EzVolt() {
