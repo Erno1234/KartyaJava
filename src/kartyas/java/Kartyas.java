@@ -10,8 +10,7 @@ public class Kartyas {
     public static void main(String[] args) {
         Feltolt();
         Kirak();
-        Melyik();
-        Kever();
+        Kever(Melyik());
         EzVolt();
       
     }
@@ -26,13 +25,15 @@ public class Kartyas {
         }
     }
 
-    private static void Melyik() {
+    private static int Melyik() {
         boolean jo;
+        int oszlop;
         do {            
             System.out.println("Oszlop 1-3: ");
-            int oszlop = myObj.nextInt();
+            oszlop = myObj.nextInt();
             jo = oszlop >=1 && oszlop<=3;
         } while (!jo);
+        return oszlop;
     }
 
     private static void Kever(int oszlop) {
