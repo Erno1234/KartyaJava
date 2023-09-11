@@ -36,7 +36,25 @@ public class Kartyas {
     }
 
     private static void Kever() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+      
+            for(int i=1; i<=7; i++){
+                switch (2){
+                    case 1:
+                        //[i] = 19-(i-1)*3;
+                        break;
+                    case 2:
+                        //[i+7] = 20-(i-1)*3;
+                        break;
+                    case 3:
+                        //i+14 =21-(i-1)*3;
+                        break;
+                    default:
+                        
+                }
+                
+         
+                
+        }
     }
 
     private static void EzVolt() {
@@ -46,15 +64,7 @@ public class Kartyas {
     private static void Feltolt() {
         String[] szinek = {"P", "T", "Z", "M"};
         String[] ertekek = {"Ász", "Kir", "Fel", ",X", "IX", "VIII"};
-        /*
-        for (int i = 0; i < szinek.length; i++) {
-            for (int j = 0; j < ertekek.length && j < 22; j++) {
-                
-                pakli[index]= szinek[i]+"_"+ertekek[j]+" ";
-                index++;
-            }  
-        }
-    */
+        
         int i =1;
         for (String szin : szinek){
             for (int j = 0; i < 22 && j < ertekek.length; j++) {
