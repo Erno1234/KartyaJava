@@ -10,8 +10,7 @@ public class Kartyas {
     public static void main(String[] args) {
         Feltolt();
         Kirak();
-        Melyik();
-        Kever();
+        Kever(Melyik());
         EzVolt();
       
     }
@@ -19,22 +18,25 @@ public class Kartyas {
     private static void Kirak() {
         for (int i = 0; i < pakli.length; i++) {
 
-            System.out.printf("%-8a",pakli[i]);
+            System.out.printf("%-8s",pakli[i]);
             if (i % 3 == 0) {
                 System.out.println("");
             }
         }
     }
 
-    private static void Melyik() {
+    private static int Melyik() {
         boolean jo;
+        int oszlop;
         do {            
             System.out.println("Oszlop 1-3: ");
-            int oszlop = myObj.nextInt();
+            oszlop = myObj.nextInt();
             jo = oszlop >=1 && oszlop<=3;
         } while (!jo);
+        return oszlop;
     }
 
+<<<<<<< HEAD
     private static void Kever() {
       
             for(int i=1; i<=7; i++){
@@ -54,6 +56,21 @@ public class Kartyas {
                 
          
                 
+=======
+    private static void Kever(int oszlop) {
+        switch (oszlop) {
+            case 1:
+                //Arnold
+                break;
+            case 2:
+                //Erno
+                break;
+            case 3:
+                //Jani
+                break;
+                
+
+>>>>>>> 0bca16b3ce3ba22aea40de2f10756f95640db899
         }
     }
 
