@@ -35,8 +35,20 @@ public class Kartyas {
         } while (!jo);
     }
 
-    private static void Kever() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    private static void Kever(int oszlop) {
+        switch (oszlop) {
+            case 1:
+                //Arnold
+                break;
+            case 2:
+                //Erno
+                break;
+            case 3:
+                //Jani
+                break;
+                
+
+        }
     }
 
     private static void EzVolt() {
