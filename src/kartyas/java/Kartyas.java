@@ -19,7 +19,7 @@ public class Kartyas {
     private static void Kirak() {
         for (int i = 0; i < pakli.length; i++) {
 
-            System.out.printf("%-8a",pakli[i]);
+            System.out.printf("%-8s",pakli[i]);
             if (i % 3 == 0) {
                 System.out.println("");
             }
