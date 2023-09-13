@@ -42,7 +42,7 @@ public class Kartyas {
         int csere;
         switch (oszlop) {
             case 1:
-
+                
             case 2:
                 for (int i = 1; i <= 7; i++) {
                     j = 19 - (i - 1) * 3;
