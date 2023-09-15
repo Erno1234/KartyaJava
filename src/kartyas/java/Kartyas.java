@@ -39,10 +39,32 @@ public class Kartyas {
 
     private static void Kever(int oszlop) {
         int j;
+        int k;
         int csere;
         switch (oszlop) {
             case 1:
-                
+                int ex = 1;
+                while (ex <= 7) {
+                    k = 19 - (ex - 1) * 3;
+                    csere = ex;
+                    pakli[ex] = pakli[k];
+                    pakli[k] = pakli[csere];
+                    ex++;
+                }
+                while (ex <= 7) {
+                    k = 20 - (ex - 1) * 3;
+                    csere = ex + 7;
+                    pakli[ex + 7] = pakli[k];
+                    pakli[k] = pakli[csere];
+                    ex++;
+                }
+                while (ex <= 7) {
+                    k = 21 - (ex - 1) * 3;
+                    csere = ex + 14;
+                    pakli[ex + 14] = pakli[k];
+                    pakli[k] = pakli[csere];
+                    ex++;
+                }
             case 2:
                 for (int i = 1; i <= 7; i++) {
                     j = 19 - (i - 1) * 3;
